@@ -1,9 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/Navigation.astro";
-
-import "../styles/global.css";
-const pageTitle = "About Me";
 
 const identity = {
   firstName: "Sarah",
@@ -21,14 +17,12 @@ const goal = 3;
 const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "capitalize";
+
+const pageTitle = 'About';
 ---
 
-<Layout>
-
-
-  <h1>{pageTitle}</h1>
+<Layout pageTitle={pageTitle}>
   <h2>... and my new Astro site!</h2>
-
   <p>
     I am working through Astro's introductory tutorial. This is the second page
     on my website, and it's the first one I built myself!
